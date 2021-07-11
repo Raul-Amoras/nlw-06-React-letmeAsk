@@ -1,0 +1,31 @@
+.button {
+  margin-top: 1rem;
+  font: 500 1rem 'Roboto', sans-serif;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+
+  color: hsla(0, 0%, 100%, 1);
+  background: hsla(255, 98%, 67%, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: filter 0.2s;
+
+  img {
+    margin-right: 0.5rem;
+  }
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
